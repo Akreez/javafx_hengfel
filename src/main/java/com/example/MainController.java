@@ -41,12 +41,16 @@ public class MainController {
             alert.show();
             return;
         }
-        double radius = Double.parseDouble(radiusField.getText());
-        double height = Double.parseDouble(heightField.getText());
+        Double radius = Double.parseDouble(radiusField.getText());
+        Double height = Double.parseDouble(heightField.getText());
 
         Double area = 2*Math.PI*Math.pow(radius, 2) + 2*Math.PI*radius*height;
         
         areaField.setText(area.toString());
+
+        String line = radius.toString() + ":" + height.toString() + ":" + area.toString();
+        Storage.WriteFile(line);
+
         clearFields();
     }
 
