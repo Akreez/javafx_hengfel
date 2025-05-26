@@ -36,7 +36,7 @@ public class MainController {
             Alert alert = new Alert(AlertType.ERROR);
             alert.setTitle("Hiba!");
             alert.setHeaderText("Hiba a bevitelben!");
-            alert.setContentText("Nem megfelelő megfelelő adatok!");
+            alert.setContentText("Nem megfelelő adatok!");
             alert.initOwner(App._stage);
             alert.show();
             return;
