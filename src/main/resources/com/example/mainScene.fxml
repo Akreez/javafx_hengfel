@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.MainController">
+  <tabs>
+    <Tab text="Számító">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="80.0" layoutY="26.0" text="A kör alapú henger felszínének számítása:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="98.0" text="Sugár:" />
+                  <TextField fx:id="radiusField" layoutX="58.0" layoutY="118.0" />
+                  <TextField fx:id="heightField" layoutX="58.0" layoutY="173.0" />
+                  <TextField fx:id="areaField" editable="false" layoutX="58.0" layoutY="276.0" />
+                  <Label layoutX="58.0" layoutY="152.0" text="Magasság:" />
+                  <Label layoutX="58.0" layoutY="259.0" text="Felszín:" />
+                  <Button layoutX="60.0" layoutY="214.0" mnemonicParsing="false" onAction="#onClickCalcButton" text="Számít" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Fejléc">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="142.0" layoutY="39.0" text="Kövesdi Ákos">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="178.0" text="2025-05-26" />
+                  <Label layoutX="259.0" layoutY="178.0" text="Szoft I-N" />
+                  <Label layoutX="396.0" layoutY="177.0" text="Verzió: 0.1" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
