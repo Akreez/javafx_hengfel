@@ -1,5 +1,5 @@
 /*
-* File: FileWriter.java
+* File: Storage.java
 * Author: Kövesdi Ákos
 * Copyright: 2025, Kövesdi Ákos
 * Group: Szoft I-N
